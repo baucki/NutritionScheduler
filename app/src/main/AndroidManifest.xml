@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rs.raf.projekat_avg_ivan_bauk_rn6218">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.application.Vezbe11Application"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Vezbe11" >
+        <activity
+            android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.presentation.view.activities.MealsListActivity"
+            android:exported="false"/>
+        <activity
+            android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.presentation.view.activities.MenuListActivity"
+            android:exported="false"/>
+        <activity
+            android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.presentation.view.activities.MealDetailActivity"
+            android:exported="false"/>
+        <activity android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.presentation.view.activities.SaveMealActivity"
+            android:exported="false"/>
+        <activity android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.presentation.view.activities.EditMenuActivity"
+                android:exported="false"/>
+        <activity android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.presentation.view.activities.LoginActivity"
+            android:exported="false" />
+        <activity android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.presentation.view.activities.MainActivity"
+            android:exported="true" />
+        <activity android:name="rs.raf.projekat_avg_ivan_bauk_rn6218.presentation.view.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

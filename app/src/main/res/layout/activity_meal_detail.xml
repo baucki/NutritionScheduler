@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/mealThumbIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/mealTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal Name"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mealThumbIv" />
+
+            <TextView
+                android:id="@+id/caloriesLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="96dp"
+                android:text="Calories: "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mealThumbIv" />
+
+            <TextView
+                android:id="@+id/caloriesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/caloriesLabelTv"
+                app:layout_constraintTop_toBottomOf="@+id/mealThumbIv" />
+
+            <TextView
+                android:id="@+id/tagsLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Tags: "
+                app:layout_constraintTop_toBottomOf="@id/mealTv"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tagsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="tags "
+                app:layout_constraintTop_toBottomOf="@id/mealTv"
+                app:layout_constraintStart_toEndOf="@id/tagsLabelTv"
+                />
+
+            <TextView
+                android:id="@+id/areaLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Area: "
+                app:layout_constraintTop_toBottomOf="@id/tagsLabelTv"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/areaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="area "
+                app:layout_constraintTop_toBottomOf="@id/tagsLabelTv"
+                app:layout_constraintStart_toEndOf="@id/tagsLabelTv"
+                />
+
+            <TextView
+                android:id="@+id/categoryLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Category: "
+                app:layout_constraintTop_toBottomOf="@id/areaLabelTv"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/categoryTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="category "
+                app:layout_constraintTop_toBottomOf="@id/areaLabelTv"
+                app:layout_constraintStart_toEndOf="@id/categoryLabelTv"
+                />
+
+
+
+            <TextView
+                android:id="@+id/youtubeLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Youtube:  "
+                app:layout_constraintTop_toBottomOf="@id/categoryTv"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/youtubeTv"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="youtube "
+                app:layout_constraintTop_toBottomOf="@id/categoryTv"
+                app:layout_constraintStart_toEndOf="@id/youtubeLabelTv"
+                />
+
+            <TextView
+                android:id="@+id/instructionsLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Instructions:  "
+                app:layout_constraintTop_toBottomOf="@id/youtubeLabelTv"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/instructionsTv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="8dp"
+                android:text="some long explanation about how to prepare a certain food "
+                app:layout_constraintTop_toBottomOf="@id/instructionsLabelTv"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/recipeLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Recipe: "
+                app:layout_constraintTop_toBottomOf="@id/instructionsTv"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/ingredientsLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Ingredients"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/measuresLabelTv"
+                app:layout_constraintTop_toBottomOf="@id/recipeLabelTv"/>
+
+            <TextView
+                android:id="@+id/measuresLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Measures"
+                app:layout_constraintEnd_toStartOf="@id/recipeCaloriesLabelTv"
+                app:layout_constraintStart_toEndOf="@id/ingredientsLabelTv"
+                app:layout_constraintTop_toBottomOf="@id/recipeLabelTv"/>
+
+            <TextView
+                android:id="@+id/recipeCaloriesLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Calories"
+                app:layout_constraintStart_toEndOf="@id/measuresLabelTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recipeLabelTv"/>
+
+            <!--   FROM HERE ARE ALL INGREDIENTS FOR RECIPE   -->
+
+            <TextView
+                android:id="@+id/ingredients1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient1"
+                app:layout_constraintStart_toStartOf="@id/ingredientsLabelTv"
+                app:layout_constraintTop_toBottomOf="@id/ingredientsLabelTv"/>
+
+            <TextView
+                android:id="@+id/measures1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures1"
+                app:layout_constraintStart_toStartOf="@id/measuresLabelTv"
+                app:layout_constraintTop_toBottomOf="@id/measuresLabelTv"/>
+
+            <TextView
+                android:id="@+id/Calories1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories1"
+                app:layout_constraintStart_toStartOf="@id/recipeCaloriesLabelTv"
+                app:layout_constraintTop_toBottomOf="@id/recipeCaloriesLabelTv"/>
+
+
+            <TextView
+                android:id="@+id/ingredients2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient2"
+                app:layout_constraintStart_toStartOf="@id/ingredients1Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients1Tv"/>
+
+            <TextView
+                android:id="@+id/measures2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures2"
+                app:layout_constraintStart_toStartOf="@id/measures1Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures1Tv"/>
+
+            <TextView
+                android:id="@+id/Calories2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories2"
+                app:layout_constraintStart_toStartOf="@id/Calories1Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories1Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients3Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient3"
+                app:layout_constraintStart_toStartOf="@id/ingredients2Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients2Tv"/>
+
+            <TextView
+                android:id="@+id/measures3Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures3"
+                app:layout_constraintStart_toStartOf="@id/measures2Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures2Tv"/>
+
+            <TextView
+                android:id="@+id/Calories3Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories3"
+                app:layout_constraintStart_toStartOf="@id/Calories2Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories2Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients4Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient4"
+                app:layout_constraintStart_toStartOf="@id/ingredients3Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients3Tv"/>
+
+            <TextView
+                android:id="@+id/measures4Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures4"
+                app:layout_constraintStart_toStartOf="@id/measures3Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures3Tv"/>
+
+            <TextView
+                android:id="@+id/Calories4Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories4"
+                app:layout_constraintStart_toStartOf="@id/Calories3Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories3Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients5Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient5"
+                app:layout_constraintStart_toStartOf="@id/ingredients4Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients4Tv"/>
+
+            <TextView
+                android:id="@+id/measures5Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures5"
+                app:layout_constraintStart_toStartOf="@id/measures4Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures4Tv"/>
+
+            <TextView
+                android:id="@+id/Calories5Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories5"
+                app:layout_constraintStart_toStartOf="@id/Calories4Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories4Tv"/>
+
+
+            <TextView
+                android:id="@+id/ingredients6Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient6"
+                app:layout_constraintStart_toStartOf="@id/ingredients5Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients5Tv"/>
+
+            <TextView
+                android:id="@+id/measures6Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures6"
+                app:layout_constraintStart_toStartOf="@id/measures5Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures5Tv"/>
+
+            <TextView
+                android:id="@+id/Calories6Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories6"
+                app:layout_constraintStart_toStartOf="@id/Calories5Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories5Tv"/>
+
+
+            <TextView
+                android:id="@+id/ingredients7Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient7"
+                app:layout_constraintStart_toStartOf="@id/ingredients6Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients6Tv"/>
+
+            <TextView
+                android:id="@+id/measures7Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures7"
+                app:layout_constraintStart_toStartOf="@id/measures6Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures6Tv"/>
+
+            <TextView
+                android:id="@+id/Calories7Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories7"
+                app:layout_constraintStart_toStartOf="@id/Calories6Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories6Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients8Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient8"
+                app:layout_constraintStart_toStartOf="@id/ingredients7Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients7Tv"/>
+
+            <TextView
+                android:id="@+id/measures8Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures8"
+                app:layout_constraintStart_toStartOf="@id/measures7Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures7Tv"/>
+
+            <TextView
+                android:id="@+id/Calories8Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories8"
+                app:layout_constraintStart_toStartOf="@id/Calories7Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories7Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients9Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient9"
+                app:layout_constraintStart_toStartOf="@id/ingredients8Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients8Tv"/>
+
+            <TextView
+                android:id="@+id/measures9Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures9"
+                app:layout_constraintStart_toStartOf="@id/measures8Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures8Tv"/>
+
+            <TextView
+                android:id="@+id/Calories9Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories9"
+                app:layout_constraintStart_toStartOf="@id/Calories8Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories8Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients10Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient10"
+                app:layout_constraintStart_toStartOf="@id/ingredients9Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients9Tv"/>
+
+            <TextView
+                android:id="@+id/measures10Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures10"
+                app:layout_constraintStart_toStartOf="@id/measures9Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures9Tv"/>
+
+            <TextView
+                android:id="@+id/Calories10Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories10"
+                app:layout_constraintStart_toStartOf="@id/Calories9Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories9Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients11Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient11"
+                app:layout_constraintStart_toStartOf="@id/ingredients10Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients10Tv"/>
+
+            <TextView
+                android:id="@+id/measures11Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures11"
+                app:layout_constraintStart_toStartOf="@id/measures10Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures10Tv"/>
+
+            <TextView
+                android:id="@+id/Calories11Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories11"
+                app:layout_constraintStart_toStartOf="@id/Calories10Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories10Tv"/>
+
+
+            <TextView
+                android:id="@+id/ingredients12Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient12"
+                app:layout_constraintStart_toStartOf="@id/ingredients11Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients11Tv"/>
+
+            <TextView
+                android:id="@+id/measures12Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures12"
+                app:layout_constraintStart_toStartOf="@id/measures11Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures11Tv"/>
+
+            <TextView
+                android:id="@+id/Calories12Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories12"
+                app:layout_constraintStart_toStartOf="@id/Calories11Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories11Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients13Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient13"
+                app:layout_constraintStart_toStartOf="@id/ingredients12Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients12Tv"/>
+
+            <TextView
+                android:id="@+id/measures13Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures13"
+                app:layout_constraintStart_toStartOf="@id/measures12Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures12Tv"/>
+
+            <TextView
+                android:id="@+id/Calories13Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories13"
+                app:layout_constraintStart_toStartOf="@id/Calories12Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories12Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients14Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient14"
+                app:layout_constraintStart_toStartOf="@id/ingredients13Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients13Tv"/>
+
+            <TextView
+                android:id="@+id/measures14Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures14"
+                app:layout_constraintStart_toStartOf="@id/measures13Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures13Tv"/>
+
+            <TextView
+                android:id="@+id/Calories14Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories14"
+                app:layout_constraintStart_toStartOf="@id/Calories13Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories13Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients15Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient15"
+                app:layout_constraintStart_toStartOf="@id/ingredients14Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients14Tv"/>
+
+            <TextView
+                android:id="@+id/measures15Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures15"
+                app:layout_constraintStart_toStartOf="@id/measures14Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures14Tv"/>
+
+            <TextView
+                android:id="@+id/Calories15Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories15"
+                app:layout_constraintStart_toStartOf="@id/Calories14Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories14Tv"/>
+
+
+            <TextView
+                android:id="@+id/ingredients16Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient16"
+                app:layout_constraintStart_toStartOf="@id/ingredients15Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients15Tv"/>
+
+            <TextView
+                android:id="@+id/measures16Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures16"
+                app:layout_constraintStart_toStartOf="@id/measures15Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures15Tv"/>
+
+            <TextView
+                android:id="@+id/Calories16Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories16"
+                app:layout_constraintStart_toStartOf="@id/Calories15Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories15Tv"/>
+
+
+            <TextView
+                android:id="@+id/ingredients17Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient17"
+                app:layout_constraintStart_toStartOf="@id/ingredients16Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients16Tv"/>
+
+            <TextView
+                android:id="@+id/measures17Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures17"
+                app:layout_constraintStart_toStartOf="@id/measures16Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures16Tv"/>
+
+            <TextView
+                android:id="@+id/Calories17Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories17"
+                app:layout_constraintStart_toStartOf="@id/Calories16Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories16Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients18Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient18"
+                app:layout_constraintStart_toStartOf="@id/ingredients17Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients17Tv"/>
+
+            <TextView
+                android:id="@+id/measures18Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures18"
+                app:layout_constraintStart_toStartOf="@id/measures17Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures17Tv"/>
+
+            <TextView
+                android:id="@+id/Calories18Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories18"
+                app:layout_constraintStart_toStartOf="@id/Calories17Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories17Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients19Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient19"
+                app:layout_constraintStart_toStartOf="@id/ingredients18Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients18Tv"/>
+
+            <TextView
+                android:id="@+id/measures19Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures19"
+                app:layout_constraintStart_toStartOf="@id/measures18Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures18Tv"/>
+
+            <TextView
+                android:id="@+id/Calories19Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories19"
+                app:layout_constraintStart_toStartOf="@id/Calories18Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories18Tv"/>
+
+            <TextView
+                android:id="@+id/ingredients20Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ingredient20"
+                app:layout_constraintStart_toStartOf="@id/ingredients19Tv"
+                app:layout_constraintTop_toBottomOf="@id/ingredients19Tv"/>
+
+            <TextView
+                android:id="@+id/measures20Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Measures20"
+                app:layout_constraintStart_toStartOf="@id/measures19Tv"
+                app:layout_constraintTop_toBottomOf="@id/measures19Tv"/>
+
+            <TextView
+                android:id="@+id/Calories20Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calories20"
+                app:layout_constraintStart_toStartOf="@id/Calories19Tv"
+                app:layout_constraintTop_toBottomOf="@id/Calories19Tv"/>
+
+            <Button
+                android:id="@+id/addToMenuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="add to menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cancelBtn"
+                app:layout_constraintTop_toBottomOf="@id/Calories20Tv"
+
+                />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Cancel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/addToMenuBtn"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>
